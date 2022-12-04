@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_2"
+    app:startDestination="@id/resturantFragment2">
+
+    <fragment
+        android:id="@+id/resturantFragment2"
+        android:name="com.example.fooddelivery.fragment.ResturantFragment"
+        android:label="fragment_resturant"
+        tools:layout="@layout/fragment_resturant" >
+        <action
+            android:id="@+id/action_resturantFragment2_to_restaurantNameFragment"
+            app:destination="@id/restaurantNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantNameFragment"
+        android:name="com.example.fooddelivery.fragment.RestaurantNameFragment"
+        android:label="fragment_restaurant_name"
+        tools:layout="@layout/fragment_restaurant_name" >
+        <action
+            android:id="@+id/action_restaurantNameFragment_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheetFragment"
+        android:name="com.example.fooddelivery.fragment.BottomSheetFragment"
+        android:label="fragment_bottom_sheet"
+        tools:layout="@layout/fragment_bottom_sheet" />
+</navigation>

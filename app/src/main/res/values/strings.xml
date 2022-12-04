@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Food Delivery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="text_desc">هذا النص هو مثال لنص يمكن استخراجه او كتابته فى نفس المساحة وقد تم توليد هذا النص من مولد النص العربي</string>
+    <string name="desc_order">هذا النص هو مثال لنص يمكن ان يستبدل فى نفس المساحة</string>
+
+    <string-array name="country_key">
+        <item>+20</item>
+        <item>211</item>
+        <item>93</item>
+        <item>376</item>
+        <item>672</item>
+        <item>54</item>
+        <item>43</item>
+    </string-array>
+
+    <string-array name="country_name">
+        <item>البقيع</item>
+        <item>الدمام</item>
+        <item>الدوحة</item>
+        <item>الرياض</item>
+        <item>جدة</item>
+        <item>قباء</item>
+        <item>المدينة المنورة</item>
+    </string-array>
+
+</resources>

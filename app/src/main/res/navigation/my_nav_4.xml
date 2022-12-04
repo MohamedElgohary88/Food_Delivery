@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_4"
+    app:startDestination="@id/orderDetailsFragment">
+
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.example.fooddelivery.fragment.OrderDetailsFragment"
+        android:label="OrderDetailsFragment" >
+        <action
+            android:id="@+id/action_orderDetailsFragment_to_trackOrderFragment"
+            app:destination="@id/trackOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trackOrderFragment"
+        android:name="com.example.fooddelivery.fragment.TrackOrderFragment"
+        android:label="fragment_track_order"
+        tools:layout="@layout/fragment_track_order" />
+</navigation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.fooddelivery.fragment.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_sendMessageFragment"
+            app:destination="@id/sendMessageFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_createNewAccountFragment"
+            app:destination="@id/createNewAccountFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/sendMessageFragment"
+        android:name="com.example.fooddelivery.fragment.SendMessageFragment">
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_sendMessageFragment_to_createNewAccountGmailFragment"
+            app:destination="@id/createNewAccountGmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewAccountFragment"
+        android:name="com.example.fooddelivery.fragment.CreateNewAccountFragment">
+        <action
+            android:id="@+id/action_createNewAccountFragment_to_sendMessageFragment"
+            app:destination="@id/sendMessageFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/createNewAccountGmailFragment"
+        android:name="com.example.fooddelivery.fragment.CreateNewAccountGmailFragment"
+        tools:layout="@layout/fragment_create_new_account_gmail" />
+</navigation>
+
+
+    <!--
+        android:label="تسجيل الدخول"
+        android:label="إرسال رمز التحقق"
+        android:label="إنشاء حساب جديد"
+        android:label="تسجيل بحساب جيميل"-->
